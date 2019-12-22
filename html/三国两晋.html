@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/publicCss.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/face.css">
+    <link rel="stylesheet" href="../css/side.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="../js/fontSize.js"></script>
+    <script src="../js/sidemenu.js"></script>
+    <title>三国两晋</title>
+</head>
+<body  bgcolor="F2EFE6">
+    <div class="container">
+        <div class="top">
+            <i class="web-font">杭州历史网</i>
+                <ul>
+                    <li><a class="ftsize1"  href="../html/index.html">首页</a></li>
+                    <li><a class="ftsize1"  href="../html/秦汉时期.html">历史概况</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/历史名人.html">历史名人</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/重大事件.html">重大事件</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/诗歌文化.html">诗歌文化</a></li>
+                    <li><a class="ftsize1" target="_blank" href="https://www.bilibili.com/">珍贵文物</a></li>
+                </ul>
+            <div>
+                <table border="1px;" style="margin-left: 1vh;" >
+                    <tr>
+                        <td style="width: 100%;border: 0;"><input  class="search-txt" name="search-txt" type="text" placeholder="搜索" name="sousuo" id="search"></td>
+                        <td style="border: 0;"><i class="iconfont icon-search" style="margin: 0;"></i></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="fanhui">
+            <a style="color: black;" href="../html/导航栏固定登录前.html">首页</a> > 
+            <a style="color: black;" href="../html/秦汉时期.html">历史概况</a> > 三国两晋
+        </div>
+        <hr>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="../html/秦汉时期.html">秦汉时期</a>                                  
+                <a href="../html/三国两晋.html">三国两晋</a>                                
+                <a href="../html/唐宋时期.html">唐宋时期</a>
+                <a href="../html/明清时期.html">明清时期</a>
+            </div>
+            <div id="main">
+                <span class="menu"  onclick="openNav()">&#9776; </span>
+            </div>
+        <div class="content">
+            <div class="titles">
+                <h3>秦汉时期以前的杭州</h3>
+            </div>
+            <div class="size">
+                字体：
+                <input id="s" type="radio" name="ftsize" onclick="changeSize(this.id)">小
+                <input id="m" type="radio" name="ftsize" onclick="changeSize(this.id)" checked>中
+                <input id="b" type="radio" name="ftsize" onclick="changeSize(this.id)">大<hr>
+            </div>
+            <div class="neirong" id="neirong" style="font-family: 'Courier New', Courier, monospace;">
+                <h3>名字起源</h3>
+                    <p id="wznr" style="font-size: 1rem;text-indent: 2em;">
+                        三国、两晋、南北朝时期，杭州为吴国的吴兴郡，属扬州。因外族相继入侵，晋室南迁，促进了江南和钱塘江两岸经济文化的发展。
+                        这时，西湖已有“明圣湖”、“金牛湖”之称。东晋咸和元年（326年），印度佛教徒慧理在飞来峰下建了灵隐寺，这不仅是西湖最古的丛林建筑，
+                        也是江南最古老的名刹。随后有方士许迈及葛洪等人在武林山下、韬光、宝石山一带进行写书、炼丹等活动，传播宗教，西湖名山胜水也渐次开拓。
+                        梁武帝太清三年（549年），升钱唐县为临江郡。陈后主祯明元年（587年），
+                        又置钱唐郡，辖钱唐、于潜、富阳、新城四县，属吴州。
+                    </p>
+                    <div style="display: flex;justify-content: center;"><img src="../img/sglj.jpg" alt="" width="400px" height="300px"></div>
+                <h3>初步发展</h3>
+                    <p id="wznr" style="font-size: 1rem;text-indent: 2em;">
+                        南朝宋孝武帝大明三年(459)，以扬州所统六郡为王畿，吴郡属之，钱唐县隶王畿。大明八年，罢王畿，吴郡和钱唐县复属扬州。齐武帝永明三年(485)，
+                        唐寓之在新城(今富阳新登)起兵，次年正月以钱唐为中心建立政权，国号吴，年号兴平(486—487)。梁武帝太清三年(549)，以吴郡置吴州。
+                        同年，侯景升钱唐县为临江郡(不久即废)，隶吴州，此为钱唐设置郡级政区之始。陈后主祯明元年 (587)，置钱唐郡
+                        ，隶吴州。郡治钱唐县，郡辖钱唐、富阳、新城、於潜4县。
+                    </p>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+    <script>       
+        $.get("../html/footer.html", function(result){      
+          $("#footer").html(result);    
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/publicCss.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/face.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="../js/fontSize.js"></script>
+    <title>临安春雨初霁</title>
+</head>
+<body bgcolor="F2EFE6">
+    <div class="container">
+        <div class="top">
+                <i class="web-font">杭州历史网</i>
+                <ul>
+                    <li><a class="ftsize1"  href="../html/index.html">首页</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/秦汉时期.html">历史概况</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/历史名人.html">历史名人</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/重大事件.html">重大事件</a></li>
+                    <li><a class="ftsize1"  href="../html/诗歌文化.html">诗歌文化</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/珍贵文物.html">珍贵文物</a></li>
+                </ul>
+                <div>
+                    <table border="1px;" style="margin-left: 1vh;" >
+                        <tr>
+                            <td style="width: 100%;border: 0;"><input  class="search-txt" name="search-txt" type="text" placeholder="搜索" name="sousuo" id="search"></td>
+                            <td style="border: 0;"><i class="iconfont icon-search" style="margin: 0;"></i></td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+        <div class="fanhui">
+                <a style="color: black;" href="../html/导航栏固定登录前.html">首页</a> > 
+                <a style="color: black;" href="../html/诗歌文化.html">诗歌文化</a> > 临安春雨初霁
+        </div>
+        <hr>
+        <div class="content">
+            <div class="titles">
+                <h3>陆游：小楼一夜听春雨，深巷明朝卖杏花。诗意的生活，诗意的杭州。</h3>
+            </div>
+            <div class="size">
+                字体：
+                <input id="s" type="radio" name="ftsize" onclick="changeSize(this.id)">小
+                <input id="m" type="radio" name="ftsize" onclick="changeSize(this.id)" checked>中
+                <input id="b" type="radio" name="ftsize" onclick="changeSize(this.id)">大<hr>
+            </div>
+            <div class="neirong">
+                <h3>古诗 《临安春雨初霁》</h3>
+                <img src="/img/poem-6.jpg" style="float: right;width: 380px;height: 320px;margin: 0 5px 5px 5px;">
+                <p id="wznr" style="font-size: 1rem;">
+                     年代：宋<br>
+                     作者：陆游<br><br>
+                     世味年来薄似纱，谁令骑马客京华。<br><br>
+                     小楼一夜听春雨，深巷明朝卖杏花。<br><br>
+                     矮纸斜行闲作草，晴窗细乳戏分茶。<br><br>
+                     素衣莫起风尘叹，犹及清明可到家。
+                </p>
+                    <br style="clear: both;">
+                <h3>后世点评</h3>
+                    <p id="wznr" style="font-size: 1rem;text-indent: 2em;">
+                        小楼深巷卖花声，七字春愁隔夜生。（清·舒位《书剑南诗集序》）</p>
+                    <p id="wznr" style="font-size: 1rem;text-indent: 2em;">
+                        “小楼”一联，从诗的意境看，有三个层次：身居小楼，一夜听雨，是一诗境；春雨如丝，
+                        绵绵不断，杏花开放，带露艳丽，另一诗境；深巷卖花，声声入耳，又一诗境。（殷光熹《宋诗名篇赏析》）</p>
+                        <p id="wznr" style="font-size: 1rem;text-indent: 2em;"> “小楼一夜听春雨，深巷明朝卖杏花。”此句被誉为“绘尽江南春的神魄”。
+                    </p>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+    <script>
+        
+            $.get("../html/footer.html", function(result){      
+              $("#footer").html(result);    
+            });
+            </script>
+</body>
+</html>

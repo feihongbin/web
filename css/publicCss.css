@@ -1,0 +1,101 @@
+a.ftsize1{
+    font-size:20px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+li{
+    list-style-type: none;
+    float: left;
+}
+
+.dorp{
+    position: relative;
+    display: inline-block;
+}
+            
+.dorp_con{
+    display: none;
+    position: absolute;
+    background-color: burlywood;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding:0;
+    }
+.dorp:hover .dorp_con{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#drop-down {
+    background-color: burlywood;
+    text-align: center;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color:black;
+}
+a:active{
+    text-decoration: none;
+    color: black;
+}
+.top{
+    padding: 10px;
+    /*background-color: white;*/
+    height: 60px;
+    padding: 5px;
+    width: 1500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    width: 120px;
+    height: 40px;
+    margin-left: 10px;
+}
+td{
+    border: 0px;
+}
+
+.search-txt{
+    margin: 0px;
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+
+}
+
+.fanhui{
+    margin-top: 5px;
+    margin-left: 170px;
+}
+.content{
+    width: 900px;
+    margin: 20px 200px 0 170px;
+    padding: 10px;
+    border: solid 1px rgb(219, 217, 217);
+}
+.titles{
+    width: 800px;
+    height: 40px;
+    margin: 0px 0 10px 40px;
+    
+}
+.size{
+    width: 900px;
+    float: right;
+    text-align: right;
+}
+.neirong{
+    
+    width: 700px;
+    padding: 40px;
+    font-family: webfont;
+}
+

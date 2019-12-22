@@ -1,0 +1,61 @@
+html,body{
+    font-size:10px;
+}
+#box{
+    width:600px;
+    height:450px;
+    margin: 0px;
+}
+#dm{
+    width: 100%;
+    height:50%;
+    background:rgb(white,white ,white ,0.1);
+    position: absolute;
+    top:10px;
+    left:0;
+}
+#dm span{
+    width:auto;
+    height:3rem;
+    font-size:2rem;
+    line-height:2rem;
+    position:absolute;
+    white-space:nowrap;
+}
+#idDom{
+    width:100%;height:10vh;
+    margin:0 auto;
+    background:burlywood;
+    position: relative;
+    bottom:0;
+}
+#vedio{
+    position: absolute;
+    top:0;
+    left:40px; 
+}
+#content{
+    width:50rem;
+    height:10vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.title{
+    font-size:2.2px rein;
+    color:#fff;
+    line-height:#ccc;
+}
+.text{
+    width:20rem;height:2.5rem;
+    border:none;border-radius:.5rem;
+    font-size:1.4rem;margin:0 .5rem;
+    padding:0 1rem;
+}
+.btn{width:6rem;
+    height:2.5rem;
+    border:none;
+    border-radius: 4px;
+    background:blue;
+    color:#fff;
+}

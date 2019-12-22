@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/publicCss.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/lsrw.css">
+    <link rel="stylesheet" href="../css/face.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/xuanfu.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <title>历史名人</title>
+</head>
+    <body bgcolor="F2EFE6">
+        <div class="container">
+            <div class="top">
+                    <i class="web-font">杭州历史网</i>
+                    <ul>
+                        <li><a class="ftsize1"  href="../html/导航栏固定登录前.html">首页</a></li>
+                        <li class="dorp" onmouseover="_on()"><a class="ftsize1"  href="../html/秦汉时期.html">历史概况</a></li>
+                            <li><a class="ftsize1"  href="../html/历史名人.html">历史名人</a></li>
+                            <li><a class="ftsize1"  href="../html/重大事件.html">重大事件</a></li>
+                            <li><a class="ftsize1"  href="../html/诗词文化.html">诗词文化</a></li>
+                            <li><a class="ftsize1"  href="https://www.bilibili.com/">珍贵文物</a></li>
+                    </ul>
+                        <div>
+                            <table  border="1px" style="margin-left: 1vh;" >
+                                <tr>
+                                    <td><input  class="search-txt" name="search-txt" type="text" placeholder="搜索" name="sousuo" id="search"></td>
+                                    <td ><button style="border: 0px;"><i class="iconfont icon-search" style="margin: 0;"></i></button></td>
+                                </tr>
+                            </table>
+                        </div>
+            </div>
+        <hr>
+            <div class="fanhui">
+                <a style="color: black;" href="https://www.bilibili.com/">首页 </a>><a href=""> 历史人物 </a>> 列表 
+            </div>
+            <div class="list" >
+                <table><tr><td class="td1">人物</td><td class="td2"></td></tr></table>
+                <ul id="list-ul">
+                    <li>
+                        <div id="list-div1">
+                            <a href="../html/孙策.html" title="孙策"><h2>孙策</h2></a>
+                            <a href="../html/孙策.html" title="孙策"><img src="../img/sunce-logo.jpg" alt=""></a>
+                        <div >
+                            <p class="list-p1">策勇冠一世，有隽才大志。谋而有成，所规不细，终为天下大贼，非徒狗盗而已。</p>
+                        </div>
+                            <p class="list-p2">[2019/11/8 9:22:46]</p>
+                        </div>
+                    </li> 
+                <hr>
+                  <li>
+                    <div id="list-div1">
+                        <a href="../html/林徽因.html" title="林徽因"><h2>林徽因</h2></a>
+                        <a href="../html/林徽因.html" title="林徽因"><img src="../img/linhuiying-logo.jpg" alt=""></a>
+                        <div >
+                            <p class="list-p1">林徽因是中国近现代杰出的建筑师、诗人和作家，人民英雄纪念碑和中华人民共和国国徽深化方案的设计者之一、建筑学家梁思成的第一任妻子。一起来看看她的传奇的一生</p>
+                        </div>
+                            <p class="list-p2">[2019/10/17 12:36:45]</p>
+                    </div>
+                </li> 
+                <hr>
+                    <li>
+                        <div id="list-div1">
+                            <a href="../html/孙坚.html" title="孙坚"><h2>孙坚</h2></a>
+                            <a href="../html/孙坚.html" title="孙坚"><img src="../img/sunjian-logo.jpg" alt=""></a>
+                            <div >
+                                <p class="list-p1">权略纷纭，忠勇伯世，威棱则夷羿震荡，兵交则丑虏授馘，遂扫清宗祊，蒸禋皇祖。……忠规武节，未有如此其著者也。</p>
+                            </div>
+                                <p class="list-p2">[2019/9/5 15:32:16]</p>
+                        </div>
+                    </li> 
+                        <hr>
+                    <li>
+                        <div id="list-div1">
+                            <a href="../html/于谦.html" title="于谦"><h2>于谦</h2></a>
+                            <a href="../html/于谦.html" title="于谦"><img src="../img/yuqian-logo.jpeg" alt=""></a>
+                            <div >
+                                <p class="list-p1">朱见深：卿以俊伟之器，经济之才，历事先朝，茂着劳绩。当国家之多难，保社稷以无虞；惟公道而自持，为机奸之所害。在先帝已知其枉，而朕心实怜其忠。</p>
+                            </div>
+                                <p class="list-p2">[2019/8/24 19:16:16]</p>
+                        </div>
+                    </li> 
+                <hr>
+                </ul>
+            </div>
+         <div id="footer"></div>
+        </div>
+        <script>
+            $.get("../html/footer.html", function(result){      
+            $("#footer").html(result);
+            });
+        </script>
+</body>
+</html>

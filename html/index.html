@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/face.css">
+    <link rel="stylesheet" href="../css/lunbo.css">
+    <link rel="stylesheet" href="../css/cxsj.css">
+    <link rel="stylesheet" href="../css/face_list.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <script src="../js/lunbo.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/sidemenu.js"></script>
+    <script src="../js/xuanfu.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <title>杭州历史网</title>
+</head>
+<body  bgcolor="F2EFE6" onload="getInfo(),checkCookie()" >
+    <div class="container" id="main">
+        <div class="top">
+            <div class="logo">
+                <div id="logo"><i class="web-font">杭州历史网</i></div>
+            </div>
+            <div class="login">
+                <img id="admin" style="border-radius: 20px;" src="../img/admin.jpg"  alt="">
+                <a id="login-a" href="../html/login.html" >登录</a>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li id="daohang_0"><a href="#">首页</a></li>
+                <li class="dorp" onmouseover="_on()" ><a  href="../html/秦汉时期.html" target="blank">历史概况</a>
+                    <table id="drop-down" class="dorp_con" onmouseover="_on()" onmouseout="_off()">
+                            <tr><td><a href="../html/秦汉时期.html">秦汉时期</a></td></tr>
+                            <tr><td><a href="../html/三国两晋.html">唐宋时期</a></td></tr>
+                            <tr><td><a href="../html/唐宋时期.html">明清时期</a></td></tr>
+                            <tr><td><a href="../html/明清时期.html">近代时期</a></td></tr>
+                        </table>
+                </li>
+                <li id="daohang_1"><a href="../html/历史名人.html"  target="_blank">历史名人</a></li>
+                <li id="daohang_3"><a href="../html/重大事件.html">重大事件</a></li>
+                <li id="daohang_4"><a href="../html/诗歌文化.html">诗词文化</a></li>
+                <li id="daohang_5"><a href="../html/珍贵文物.html">珍贵文物</a></li>
+            </ul>
+        </div>
+        <div class="mid">
+            <div id="lunbo">
+                <ul id="pic">
+                    <li><a href="../html/诗词-1.html"><img src="../img/wanghaichao-lunbo.jpg"/></a><p>柳宗元带你领略盛世钱塘</p></li>  
+                    <li><a href=""><img src="../img/jian-lunbo.jpg"/></a><p>战国越王者旨於睗剑：剑中之精品，稀世之珍宝</p></li>
+                    <li><a href=""><img src="../img/sgsq-lunbo.jpg"/></a><p>三国两晋时期下的杭州政治制度</p></li>
+                    <li><a href="../html/孙坚.html"><img src="../img/sunjian-lunbo.jpg"><p>看破虏将军如何斩华雄、破董卓</p></a></li>
+                    <li><a href="../html/重大事件.html"><img src="../img/zhanzheng-lunbo.jpg"/><p>那些发生在杭州城内的战事</p></a></li>
+                </ul>
+                <ol id="list">
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+        </div>
+        <div class="bottom">
+            <div id="first">
+                <div class="people">
+                        <table><tr><td class="td1">人物</td><td class="td2"></td></tr></table>
+                        <div class="pic">
+                        <div class="people_a"> 
+                        <a href="../html/林徽因.html" id="people_1"><img src="../img/lhy-index.jpg" alt=""><p>民国才女林徽因</p></a>
+                    </div>
+                    <div class="people_b"> 
+                        <a href="../html/于谦.html" id="people_2"><img src="../img/yuqian-index.jpg" alt=""><p>于谦传奇的一生</p></a>
+                    </div>
+                </div>
+                <div class="wenzi">
+                    <ul>
+                    <li><a href="../html/孙策.html">一代英豪孙策的文治武功究竟有多强，又为何突然死亡？</a>  [2019/8/22]</li>
+                    <li><a href="../html/孙坚.html">统江东、破董卓，鲜有败绩，孙坚到底有多威猛？</a>  [2019/9/15]</li>
+                    <li><a href="../html/于谦.html">于谦：扶大厦之将倾，挽狂澜之既倒，救明于危难之间</a>  [2019/9/11]</li>
+                    <li><a href="">武林画派的创建者，一代画师——蓝瑛</a>  [2019/6/14]</li>
+                </ul>
+            </div>
+        </div>
+            <div class="people">
+                <table><tr><td class="td1">文物</td><td class="td2"></td></tr></table>
+                <div class="pic">
+                    <div class="people_a"> 
+                        <a href="" id="people_1"><img src="../img/qin-index.jpg" alt=""><p>彩凤鸣岐</p></a>
+                    </div>
+                    <div class="people_b"> 
+                        <a href="" id="people_2"><img src="../img/lzwh-index.jpg" alt=""><p>盛行玉的文化遗址——良渚</p></a>
+                    </div>
+                </div>
+                    <div class="wenzi">
+                        <ul>
+                            <li><a href="../html/明龙泉窑青瓷刻花梅瓶.html">带你亲眼目睹明朝鼎盛时期的青花瓷工业</a>  [2019/6/14]</li>
+                            <li><a href="../html/战国越王者旨於睗剑.html">吴、越剑中绝无仅有的传世佳作</a>  [2019/6/14]</li>
+                            <li><a href="../html/良渚文化.html">中华五千年新石器时代文化的象征——良渚文化</a>  [2019/6/14]</li>
+                            <li><a href="../html/唐“彩凤鸣岐”七弦琴.html">被杨宗稷夸赞为凤毛麟角的琴究竟有多好</a>  [2019/6/14]</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+            <div id="second">
+                <div class="relic">
+                    <table><tr><td class="td1">诗歌</td><td class="td2"></td></tr></table>
+                    <div class="pic">
+                        <div class="people_a"> 
+                            <a href="../html/诗词-2.html" id="people_1"><img src="../img/poem-index-1.jpg" alt=""><p>饮湖上初晴后雨二首</p></a>
+                        </div>
+                        <div class="people_b"> 
+                            <a href="" id="people_2"><img src="../img/poem-index-2.jpg" alt=""><p>临安春雨初霁</p></a>
+                        </div>
+                    </div>
+                        <div class="wenzi">
+                            <ul>
+                                <li><a href="../html/诗词-3.html">跟随白居易的脚步，去江南寻觅专属于你的那份“江南忆”</a>  [2019/7/28]</li>
+                                <li><a href="../html/诗词-4.html">务观由景而生的家国情怀</a>  [2019/8/16]</li>
+                                <li><a href="../html/诗词-1.html">“东南形胜，三吴都会”,柳宗元带你领略盛世钱塘....</a>  [2019/9/23]</li>
+                                <li><a href="../html/诗词-2.html">回到一千年前，苏轼带你观赏如画西湖</a>  [2019/8/12]</li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="relic">
+                    <table><tr><td class="td1">地理</td><td class="td2"></td></tr></table>
+                        <div class="pic">
+                            <div class="people_a"> 
+                                <a href="../html/秦汉时期.html" id="people_1"><img src="../img/dili-index-1.jpg" alt=""><p>秦汉时期</p></a>
+                            </div>
+                            <div class="people_b"> 
+                                <a href="../html/三国两晋.html" id="people_2"><img src="../img/qhsq.jpg" alt=""><p>三国两晋</p></a>
+                            </div>
+                        </div>
+                        <div class="wenzi">
+                            <ul>
+                                <li><a href="../html/秦汉时期.html">秦汉时期杭州的疆域郡制</a>  [2019/8/24]</li>
+                                <li><a href="../html/三国两晋.html">三国两晋乱世之下的杭州</a>  [2019/9/13]</li>
+                                <li><a href="../html/唐宋时期.html">唐宋时期下的杭州的政治地位迁谪</a>  [2019/7/18]</li>
+                                <li><a href="../html/明清时期.html">明清时期的钱塘杭州</a>  [2019/8/11]</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+<script type="text/javascript">
+    // 获取导航栏到屏幕顶部的距离
+    var oTop = $(".nav").offset().top;
+    //获取导航栏的高度，此高度用于保证内容的平滑过渡
+    var martop = $('.nav').outerHeight();
+    var sTop = 0;
+    // 监听页面的滚动
+    $(window).scroll(function () {
+        // 获取页面向上滚动的距离
+        sTop = $(this).scrollTop();
+        // 当导航栏到达屏幕顶端
+        if (sTop >= oTop) {
+            // 修改导航栏position属性，使之固定在屏幕顶端
+            $(".nav").css({ "position": "fixed", "top": "0" ,"z-index":"999"});
+            // 修改内容的margin-top值，保证平滑过渡
+            $(".content").css({ "margin-top": martop });
+        } else {
+            // 当导航栏脱离屏幕顶端时，回复原来的属性
+            $(".nav").css({ "position": "static" });
+            $(".content").css({ "margin-top": "0" });
+        }
+    });
+   
+function checkCookie(){
+    var user=getCookie("用户名");
+    if (user!=""){
+        document.getElementById("login-a").innerHTML = "欢迎您 " +user;
+        var s = "../img/touxiang-1.jpg";
+        var img = document.getElementById("admin").src = s;
+        setCookie("img",img,30);   
+    } 
+    lunbo();
+}
+function getInfo(){
+    var url = window.location.search;
+    if(url!=""){
+        let str = url.substring(6);
+        setCookie("用户名",str,1);
+    }
+}
+
+$.get("../html/footer.html", function(result){      
+      $("#footer").html(result);
+});
+</script>
+</body>
+</html>

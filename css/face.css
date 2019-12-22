@@ -1,0 +1,153 @@
+body{
+    margin: 0px;
+}
+.jar{
+    margin: 10px 50px;
+}
+#logo{
+    margin:20px 0 20px 200px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.login{
+    margin-right: 200px;
+    font-size: 20px;
+    display: flex;
+    flex-flow: row;
+}
+.login a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.login img{
+    width: 40px;
+    height: 40px;
+}
+.nav{
+    background-color:black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0px;
+}
+.nav li{
+    list-style-type: none;
+    float: left;
+    width: 140px;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.nav li  a:link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    height: 100%;
+}
+.nav li a:visited{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.nav li a:active{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav li a{
+    height: 100%;
+}
+.dorp{
+    position: relative;
+    display: inline-block;
+}
+            
+.dorp_con{
+    display: none;
+    position: absolute;
+    top:30px;
+    background-color: burlywood;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding:0;
+    z-index: 999;
+    }
+
+#drop-down {
+    background-color: burlywood;
+    text-align: center;
+}
+
+.footer{
+    height: 90px;
+    margin-top: 15px;
+    background-color: "F2EFE6";
+}
+.footer-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-top a {
+    margin:5px 10px;
+}
+.footer-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-middle a{
+    margin:5px 5px;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer a:link{
+    text-decoration: none;
+    color: black;
+}
+.footer a:visited{
+    text-decoration: none;
+    color:black;
+}
+.footer a:active{
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'webfont';
+    font-display: swap;
+    src: url('//at.alicdn.com/t/webfont_sfc3ay91mj.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/webfont_sfc3ay91mj.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/webfont_sfc3ay91mj.woff2') format('woff2'),
+    url('//at.alicdn.com/t/webfont_sfc3ay91mj.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/webfont_sfc3ay91mj.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/webfont_sfc3ay91mj.svg#杨任东竹石体-Bold') format('svg'); /* iOS 4.1- */
+  }
+  .web-font{
+      font-family:"webfont" !important;
+      font-size:48px;font-style:normal;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale;
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+  }

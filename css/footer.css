@@ -1,0 +1,27 @@
+.footer{
+    height: 90px;
+    margin-top: 15px;
+    background-color: "F2EFE6";
+}
+.footer-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-top a {
+    margin:5px 10px;
+}
+.footer-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-middle a{
+    margin:5px 5px;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

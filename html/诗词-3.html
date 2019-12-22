@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/publicCss.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/face.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="../js/fontSize.js"></script>
+    <title>江南忆</title>
+</head>
+<body bgcolor="F2EFE6">
+    <div class="container">
+        <div class="top">
+                <i class="web-font">杭州历史网</i>
+                <ul>
+                    <li><a class="ftsize1"  href="../html/index.html">首页</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/秦汉时期.html">历史概况</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/历史名人.html">历史名人</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/重大事件.html">重大事件</a></li>
+                    <li><a class="ftsize1"  href="../html/诗歌文化.html">诗歌文化</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/珍贵文物.html">珍贵文物</a></li>
+                </ul>
+                <div>
+                    <table border="1px;" style="margin-left: 1vh;" >
+                        <tr>
+                            <td style="width: 100%;border: 0;"><input  class="search-txt" name="search-txt" type="text" placeholder="搜索" name="sousuo" id="search"></td>
+                            <td style="border: 0;"><i class="iconfont icon-search" style="margin: 0;"></i></td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+        <div class="fanhui">
+            <a style="color: black;" href="../html/导航栏固定登录前.html">首页</a> > 
+            <a style="color: black;" href="../html/诗歌文化.html">诗歌文化</a> > 江南忆
+        </div>
+        <hr>
+        <div class="content">
+            <div class="titles">
+                <h3>白居易：江南忆，最忆是杭州。诗王邀你一起来感受杭州最忆！</h3>
+            </div>
+            <div class="size">
+                字体：
+                <input id="s" type="radio" name="ftsize" onclick="changeSize(this.id)">小
+                <input id="m" type="radio" name="ftsize" onclick="changeSize(this.id)" checked>中
+                <input id="b" type="radio" name="ftsize" onclick="changeSize(this.id)">大<hr>
+            </div>
+            <div class="neirong">
+                <h3>古诗三首 《忆江南》</h3>
+                    <img src="/img/poem-1.jpg" style="float: right;width: 380px;height: 180px;margin: 0 5px 5px 5px;">
+                    <p id="wznr" style="font-size: 1rem;">
+                         年代：唐<br>
+                         作者：白居易<br><br>
+                         江南好，风景旧曾谙。<br>
+                         日出江花红胜火，春来江水绿如蓝。<br>
+                         能不忆江南？<br><br>
+                         江南忆，最忆是杭州。<br>
+                         山寺月中寻桂子，郡亭枕上看潮头。<br>
+                         何日更重游！<br><br>
+                         江南忆，其次忆吴宫。<br>
+                         吴酒一杯春竹叶，吴娃双舞醉芙蓉。<br>
+                         早晚复相逢！<br style="clear: both;"></p>
+                <h3>文学鉴赏</h3>
+                    <p id="wznr" style="font-size: 1rem;text-indent: 2em;">
+                        第一首泛忆江南，写春景。全词五句。一开口即赞颂“江南好！”正因为“好”，
+                        才不能不“忆”。“风景旧曾谙”一句，说明那江南风景之“好”不是听人说的，而是当年亲身感受到的、
+                        体验过的，因而在自己的审美意识里留下了难忘的记忆。既落实了“好”字，又点明了“忆”字。
+                        接下去，即用两句词写他“旧曾谙”的江南风景：“日出江花红胜火，春来江水绿如蓝。”
+                        “日出”、“春来”，互文见义。春来百花盛开，已极红艳；红日普照，更红得耀眼。在这里，
+                        因同色相烘染而提高了色彩的明亮度。春江水绿，红艳艳的阳光洒满了江岸，更显得绿波粼粼。
+                        在这里，因异色相映衬而加强了色彩的鲜明性。作者把“花”和“日”联系起来，为的是同色烘染；
+                        又把“花”和“江”联系起来，为的是异色相映衬
+                        。江花红，江水绿，二者互为背景。于是红者更红，“红胜火”；绿者更绿，“绿如蓝”。
+                    </p>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+    <script>
+        
+            $.get("../html/footer.html", function(result){      
+              $("#footer").html(result);    
+            });
+            </script>
+</body>
+</html>

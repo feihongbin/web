@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/publicCss.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/face.css">
+    <link rel="stylesheet" href="../css/pinglun.css">
+    <link rel="stylesheet" href="../css/fontSize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="../js/fontSize.js"></script>
+    <script src="../js/cookie.js"></script>
+    <title>明龙泉窑青瓷刻花梅瓶</title>
+</head>
+<body bgcolor="F2EFE6">
+    <div class="container">
+        
+        <div class="top">
+                <i class="web-font">杭州历史网</i>
+                <ul>
+                    <li><a class="ftsize1"  href="../html/index.html">首页</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/秦汉时期.html">历史概况</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/历史名人.html">历史名人</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/重大事件.html">重大事件</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/诗词文化.html">诗词文化</a></li>
+                    <li><a class="ftsize1"  href="../html/珍贵文物.html">珍贵文物</a></li>
+                </ul>
+                <div>
+                    <table border="1px;" style="margin-left: 1vh;" >
+                        <tr>
+                            <td style="width: 100%;border: 0;"><input  class="search-txt" name="search-txt" type="text" placeholder="搜索" name="sousuo" id="search"></td>
+                            <td style="border: 0;"><i class="iconfont icon-search" style="margin: 0;"></i></td>
+                    </tr>
+                </table>
+                </div>
+        </div>
+        <div class="fanhui">
+            <a style="color: black;" href="../html/index.html">首页</a> > 
+            <a style="color: black;" href="../html/珍贵文物.html">珍贵文物</a> >良渚文化 
+        </div>
+        <hr>
+        <div class="content">
+            <div class="titles">
+                <h3>明朝龙泉窑青花瓷鼎盛的代表之一</h3>
+            </div>
+            <div class="size">
+                    字体：
+                    <input id="s" type="radio" name="ftsize" onclick="changeSize(this.id)">小
+                    <input id="m" type="radio" name="ftsize" onclick="changeSize(this.id)" checked>中
+                    <input id="b" type="radio" name="ftsize" onclick="changeSize(this.id)">大<hr>
+            </div>
+            
+            <div class="neirong" id="neirong">
+                <h3>明龙泉窑青瓷刻花梅瓶</h3>
+                    <img src="../img/meiping.jpg" style="float: right;width: 180px;height: 180px;margin: 0 5px 5px 5px;">
+                    <p class="wznr">
+                        直口、丰肩，鼓腹，颈部下收，圈足，口下饰叠三角纹，肩部饰花瓣纹，如意纹，腹部饰缠枝牡丹，颈部饰莲瓣纹。
+                     </p>
+                    <p class="wznr">
+                        厚青釉，足圈露胎。此器纹饰精细生动，釉色明澈莹洁，清新雅致。
+                    </p>
+                    <p class="wznr">
+                        明代龙泉窑生产仍很兴旺，制作工艺与元代基本一致，装饰技法以刻划花为主。一般胎体厚重，造型雄宏粗犷，釉层肥厚，色调淡青泛灰，明艳沉着。
+                       
+            </div>
+        </div>
+        <div class="pinglun">
+            <div class="pingluntianxie">
+            <div class="kuang"><textarea name="plnr" id="plnr" cols="124" rows="3" placeholder="有事没事儿说两句"></textarea></div>
+            <div class="pl-btn">
+                <div class="btn-btn"><button onclick="add()">提交</button></div>
+            </div>
+        </div>
+        <h4>评论</h4>
+        <div class="pinglunquyu">
+            <div class="pinglunneirong">
+            <table id="pl-table" class="pl-table" >
+                <tbody id="pl-tbody">
+                    <tr><td rowspan="2"><img src="../img/touxiang-3.jpg" alt=""></td><td>哈哈哈小强</td></tr>
+                    <tr><td></td><td colspan="10">:壮哉我大明朝。</td></tr>
+                    <tr><td></td><td >2019/11/27 下午9:15:38</td></tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        </div>
+        <div id="footer"></div>
+</div>
+<script>
+        var table = document.getElementById("pl-table");
+        var tbody = document.getElementById("pl-tbody");
+        var tr = tbody.children[0];
+        function add(){
+            var num = ":";
+            var newTr1 = document.createElement("tr");
+            var newTr2 = document.createElement("tr");
+            var newTr3 = document.createElement("tr");
+            for(var i=1;i<=3;i++){
+                let td1 = document.createElement("td");
+                if(i==1){
+                    td1.rowSpan="2";
+                    let img = document.createElement("img");
+                    img.src=getCookie("img");
+                    td1.append(img);
+                    newTr1.appendChild(td1);
+                }
+                if(i==2){
+                    td1.innerHTML=getCookie("用户名");
+                    newTr1.appendChild(td1);
+                }
+                if(i==3)
+                newTr1.appendChild(td1);
+            }
+            tbody.appendChild(newTr1);
+
+            for(var j=1;j<=2;j++){
+                let td2 = document.createElement("td");
+                if(j==1)
+                newTr2.appendChild(td2);
+                if(j==2){
+                    let s = ":"+document.getElementById("plnr").value;
+                    td2.innerHTML = s;
+                    setCookie("comment",s,30);                       
+                    newTr2.appendChild(td2);
+                    document.getElementById("plnr").Value = "";
+                }   
+            }
+            tbody.appendChild(newTr2);
+
+            for(var k=1;k<=2;k++){
+                let td3 = document.createElement("td");
+                if(k==1){
+                    newTr3.appendChild(td3);
+                }
+                if(k==2){
+                    let d = new Date();
+                    let s = d.toLocaleString();
+                    td3.innerHTML = s;
+                    setCookie("time",s,30);
+                    newTr3.appendChild(td3);
+                }
+            }
+            tbody.appendChild(newTr3);
+            document.getElementById("plnr").value= "";
+        }
+
+function check(){
+    if(getCookie("comment")!=""){
+            var newTr1 = document.createElement("tr");
+            var newTr2 = document.createElement("tr");
+            var newTr3 = document.createElement("tr");
+            for(var i=1;i<=3;i++){
+                let td1 = document.createElement("td");
+                if(i==1){
+                    td1.rowSpan="2";
+                    let img = document.createElement("img");
+                    img.src=getCookie("img");
+                    td1.append(img);
+                    newTr1.appendChild(td1);
+                }
+                if(i==2){
+                    td1.innerHTML=getCookie("用户名");
+                    newTr1.appendChild(td1);
+                }
+                if(i==3)
+                newTr1.appendChild(td1);
+            }
+            tbody.appendChild(newTr1);
+
+            for(var j=1;j<=2;j++){
+                let td2 = document.createElement("td");
+                if(j==1)
+                newTr2.appendChild(td2);
+                if(j==2){
+                    td2.innerHTML =  getCookie("comment",s,30);
+                    newTr2.appendChild(td2);
+                    document.getElementById("plnr").Value = "";
+                }   
+            }
+            tbody.appendChild(newTr2);
+
+            for(var k=1;k<=2;k++){
+                let td3 = document.createElement("td");
+                if(k==1){
+                    newTr3.appendChild(td3);
+                }
+                if(k==2){
+                    td3.innerHTML = getCookie("time",s,30);
+                    newTr3.appendChild(td3);
+                }
+            }
+            tbody.appendChild(newTr3);
+}
+}
+    $.get("../html/footer.html", function(result){      
+      $("#footer").html(result);    
+    });
+    </script>
+</body bgcolor="F2EFE6">
+</html>

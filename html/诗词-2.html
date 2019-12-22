@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/publicCss.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/face.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="../js/fontSize.js"></script>
+    <title>诗词二首</title>
+</head>
+<body bgcolor="F2EFE6">
+    <div class="container">
+        <div class="top">
+            <i class="web-font">杭州历史网</i>
+                <ul>
+                    <li><a class="ftsize1"  href="../html/index.html">首页</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/秦汉时期.html">历史概况</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/历史名人.html">历史名人</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/重大事件.html">重大事件</a></li>
+                    <li><a class="ftsize1"  href="../html/诗歌文化.html">诗歌文化</a></li>
+                    <li><a class="ftsize1" target="_blank" href="../html/珍贵文物.html">珍贵文物</a></li>
+                </ul>
+                <div>
+                    <table border="1px;" style="margin-left: 1vh;" >
+                        <tr>
+                            <td style="width: 100%;border: 0;"><input  class="search-txt" name="search-txt" type="text" placeholder="搜索" name="sousuo" id="search"></td>
+                            <td style="border: 0;"><i class="iconfont icon-search" style="margin: 0;"></i></td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+        <div class="fanhui">
+            <a style="color: black;" href="../html/导航栏固定登录前.html">首页</a> > 
+            <a style="color: black;" href="../html/诗歌文化.html">诗歌文化</a> > 诗词二首
+        </div>
+        <hr>
+        <div class="content">
+            <div class="titles">
+                <h3>苏轼眼中的杭州</h3>
+            </div>
+            <div class="size">
+                字体：
+                <input id="s" type="radio" name="ftsize" onclick="changeSize(this.id)">小
+                <input id="m" type="radio" name="ftsize" onclick="changeSize(this.id)" checked>中
+                <input id="b" type="radio" name="ftsize" onclick="changeSize(this.id)">大<hr>
+            </div>
+            <div class="neirong">
+                <h3>古诗 《饮湖上初晴后雨二首·其二》</h3>
+                    <img src="/img/poem-2.jpg" style="float: right;width: 380px;height: 180px;margin: 0 5px 5px 5px;">
+                    <p id="wznr" style="font-size: 1rem;">
+                        年代：宋<br>
+                        作者：苏轼<br><br>
+                        水光潋滟晴方好，山色空蒙雨亦奇。
+                        <br><br>
+                        欲把西湖比西子，淡妆浓抹总相宜</p>
+                <h3>文学鉴赏</h3>
+                    <p id="wznr" style="font-size: 1rem;text-indent: 2em;">
+                        这是一首赞美西湖美景的诗。作者畅游西湖，从早到晚，一边欣赏美丽的湖光山色，一边饮酒构思，
+                        意笃八极，神游万仞。于是乎写就了这首传诵一时的佳作。
+                    </p>
+                <h3>古诗 《蝶恋花·密郡上元》</h3>
+                    <img src="/img/poem-3.jpg" style="float: right;width: 380px;height: 180px;margin: 0 5px 5px 5px;">
+                    <p id="wznr" style="font-size: 1rem;">
+                        年代：宋<br>
+                        作者：苏轼<br><br>
+                        灯火钱塘三五夜。<br>
+                        明月如霜，照见人如画。<br>
+                        帐底吹笙香吐麝，更无一点尘随马。<br>
+                        寂寞山城人老也！<br>
+                        击鼓吹箫，却入农桑社。<br>
+                        火冷灯稀霜露下，昏昏雪意云垂野。
+                        <br style="clear: both;">
+                     <h3>文学鉴赏</h3>
+                    <p id="wznr" style="font-size: 1rem;text-indent: 2em;">
+                        此词用粗笔勾勒的手法，抓住当地、密郡气候、地理、风俗等方面各自的特点，
+                        描绘了两地上元节的不同景象，
+                        流露了作者对钱塘的思念和初来密郡时的寂寞心情。
+                    </p>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+    <script>
+        
+            $.get("../html/footer.html", function(result){      
+              $("#footer").html(result);    
+            });
+            </script>
+</body>
+</html>

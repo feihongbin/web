@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/publicCss.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/lsrw.css">
+    <link rel="stylesheet" href="../css/face.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/xuanfu.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <title>珍贵文物</title>
+</head>
+    <body bgcolor="F2EFE6">
+        <div class="container">
+            <div class="top">
+                <i class="web-font">杭州历史网</i>
+                    <ul>
+                        <li><a class="ftsize1"  href="../html/导航栏固定登录前.html">首页</a></li>
+                        <li class="dorp" onmouseover="_on()"><a class="ftsize1"  href="../html/秦汉时期.html">历史概况</a></li>
+                        <li><a class="ftsize1"  href="../html/历史名人.html">历史名人</a></li>
+                        <li><a class="ftsize1"  href="../html/重大事件.html">重大事件</a></li>
+                        <li><a class="ftsize1"  href="../html/诗歌文化.html">诗词文化</a></li>
+                        <li><a class="ftsize1"  href="../html/珍贵文物.html">珍贵文物</a></li>
+                    </ul>
+                    <div>
+                        <table  border="1px" style="margin-left: 1vh;" >
+                            <tr>
+                                <td><input  class="search-txt" name="search-txt" type="text" placeholder="搜索" name="sousuo" id="search"></td>
+                                <td ><button style="border: 0px;"><i class="iconfont icon-search" style="margin: 0;"></i></button></td>
+                            </tr>
+                        </table>
+                    </div>
+            </div>
+        <hr>
+            <div class="fanhui">
+                <a style="color: black;" href="../html/index.html">首页 </a>><a href="../html/珍贵文物.html"> 珍贵文物 </a>> 列表 
+            </div>
+            <div class="list" >
+                <table><tr><td class="td1">文物</td><td class="td2"></td></tr></table>
+                <ul id="list-ul">
+                    <li>
+                        <div id="list-div1">
+                            <a href="../html/良渚文化.html" title="良渚文化"><h2>良渚文化</h2></a>
+                            <a href="../html/良渚文化.html" title="良渚文化"><img src="../img/lzwh-logo.jpg" alt=""></a>
+                            <div >
+                                <p class="list-p1">国家文物局指出：良渚遗址群将成为实证中国境内的五千年新石器时代人类文化史的圣地。</p>
+                            </div>
+                            <p class="list-p2">[2019/12/8 15:12:16]</p>
+                        </div>
+                    </li> 
+                <hr>
+                    <li>
+                        <div id="list-div1">
+                          <a href="../html/战国越王者旨於睗剑.html" title="战国越王者旨於睗剑"><h2>战国越王者旨於睗剑</h2></a>
+                          <a href="../html/战国越王者旨於睗剑.html" title="战国越王者旨於睗剑"><img src="../img/zgww-1.jpg" alt=""></a>
+                          <div >
+                            <p class="list-p1">战国越王者旨於睗剑，该器物剑体宽阔，中脊起线，双刃呈弧形于近锋处收狭...</p>
+                          </div>
+                          <p class="list-p2">[2019/10/24 20:55:45]</p>
+                        </div>
+                    </li> 
+                <hr>
+                    <li>
+                        <div id="list-div1">
+                            <a href="../html/明龙泉窑青瓷刻花梅瓶.html" title="明龙泉窑青瓷刻花梅瓶"><h2>明龙泉窑青瓷刻花梅瓶</h2></a>
+                            <a href="../html/明龙泉窑青瓷刻花梅瓶.html" title="明龙泉窑青瓷刻花梅瓶"><img src="../img/zgww-2.jpg" alt=""></a>
+                            <div >
+                                <p class="list-p1">明朝鼎盛时期的泉窑佳作。</p>
+                            </div>
+                            <p class="list-p2">[2019/9/9 17:23:34]</p>
+                        </div>
+                    </li> 
+                <hr>
+                    <li>
+                        <div id="list-div1">
+                            <a href="../html/唐“彩凤鸣岐”七弦琴.html" title="唐“彩凤鸣岐”七弦琴"><h2>唐“彩凤鸣岐”七弦琴</h2></a>
+                            <a href="../html/唐“彩凤鸣岐”七弦琴.html" title="唐“彩凤鸣岐”七弦琴"><img src="../img/zgww-3.jpg" alt=""></a>
+                            <div >
+                                <p class="list-p1">唐“彩凤鸣岐”七弦琴是定王府“行有恒堂”第一琴，又是九疑山人杨宗稷“半百琴斋”第一琴并著录于《琴学丛书》中，又是“唐琴第一推雷公，蜀中九雷独称雄”的雷公琴。</p>
+                            </div>
+                            <p class="list-p2">[2019/8/24 13:24:19]</p>
+                        </div>
+                    </li> 
+                <hr>
+                </u>
+            </div>
+            <div id="footer"></div>
+        </div>
+        <script>
+            $.get("../html/footer.html", function(result){      
+            $("#footer").html(result);
+            });
+        </script>
+</body>
+</html>

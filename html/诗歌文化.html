@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/publicCss.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/lsrw.css">
+    <link rel="stylesheet" href="../css/face.css">
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <title>诗歌文化</title>
+</head>
+    <body bgcolor="F2EFE6">
+        <div class="container">
+            <div class="top">
+                <i class="web-font">杭州历史网</i>
+                    <ul>
+                        <li><a class="ftsize1"  href="../html/导航栏固定登录前.html">首页</a></li>
+                        <li class="dorp" onmouseover="_on()"><a class="ftsize1"  href="../html/秦汉时期.html">历史概况</a></li>
+                        <li><a class="ftsize1"  href="../html/历史名人.html">历史名人</a></li>
+                        <li><a class="ftsize1"  href="../html/重大事件.html">重大事件</a></li>
+                        <li><a class="ftsize1"  href="https://www.bilibili.com/">珍贵文物</a></li>
+                    </ul>
+                        <div>
+                            <table  border="1px" style="margin-left: 1vh;" >
+                                <tr>
+                                    <td><input  class="search-txt" name="search-txt" type="text" placeholder="搜索" name="sousuo" id="search"></td>
+                                    <td ><button style="border: 0px;"><i class="iconfont icon-search" style="margin: 0;"></i></button></td>
+                                </tr>
+                            </table>
+                        </div>
+            </div>
+        <hr>
+            <div class="fanhui">
+                <a style="color: black;" href="../html/导航栏固定登录前.html">首页 </a>><a href=""> 诗歌文化 </a>> 列表 
+            </div>
+            <div class="list" >
+                <table><tr><td class="td1">诗词</td><td class="td2"></td></tr></table>
+                <ul id="list-ul">
+                    <li>
+                        <div id="list-div1">
+                            <a href="../html/诗词-1.html" title="望海潮"><h2>望海潮</h2></a>
+                            <a href="../html/诗词-1.html" title="望海潮"><img src="../img/whc-logo.jpg" alt=""></a>
+                            <div style="width: 100%;">
+                                <p class="list-p1">“东南形胜，三吴都会”,柳宗元带你领略盛世钱塘....</p>
+                            </div>
+                            <p class="list-p2">[2019/10/28 14:39:18]</p>
+                        </div>
+                    </li> 
+                <hr>
+                    <li>
+                        <div id="list-div1">
+                            <a href="../html/诗词-2.html" title="诗词二首"><h2>诗词二首</h2></a>
+                            <a href="../html/诗词-2.html" title="诗词二首"><img src="../img/jny-logo.jpg" alt=""></a>
+                            <div >
+                                <p class="list-p1">或许你知道杭州是人间天堂；或许你观览过西湖风光。那么让苏东坡带你回到从前，欣赏那1000年前的西子湖畔</p>
+                            </div>
+                            <p class="list-p2">[2019/10/3 20:44:32]</p>
+                        </div>
+                    </li> 
+                <hr>
+                    <li>
+                        <div id="list-div1">
+                            <a href="../html/诗词-3.html" title="江南忆"><h2>江南忆</h2></a>
+                            <a href="../html/诗词-3.html" title="江南忆"><img src="../img/sls-logo.jpg" alt=""></a>
+                            <div >
+                                <p class="list-p1">河山大好，出去走走，碧海蓝天吹吹风，何不跟随白居易的脚步，一同去江南寻觅专属于你的那份“江南忆”</p>
+                            </div>
+                            <p class="list-p2">[2019/9/23 12:18:45]</p>
+                        </div>
+                    </li> 
+                <hr>
+                    <li>
+                        <div id="list-div1">
+                            <a href="../html/诗词-4.html" title="临安春雨初霁"><h2>临安春雨初霁</h2></a>
+                            <a href="../html/诗词-4.html" title="临安春雨初霁"><img src="../img/lacycj-logo.jpg"alt=""></a>
+                            <div >
+                                <p class="list-p1">诗开篇即以问句的形式表达世态炎凉的无奈和客籍京华的蹉跎，直抒胸臆，情感喷薄，整首诗的情绪在开篇即达到高潮，
+                                后面三联逐渐回落。无论是夜不能寐听春雨，天明百无聊赖“作草”“分茶”，还是自我安慰说“清明可到家”，都是开篇两句的注脚,都表达了作者的深情</p>
+                            </div>
+                            <p class="list-p2">[2019/7/14 13:26:46]</p>
+                        </div>
+                    </li> 
+                <hr>
+                </ul>
+            </div>
+            <div id="footer"></div>
+        </div>
+        <script>
+        
+                $.get("../html/footer.html", function(result){      
+                  $("#footer").html(result);    
+                });
+                </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.pingluntianxie{
+    margin: 10px 0 0 170px;
+}
+
+.pl-btn{
+    display: flex;
+    flex-flow: row;
+    justify-content: end;
+    width: 926px;
+}
+.btn-btn{
+    margin: 5px;
+}
+.btn-btn button{
+    width: 60px;
+    height: 24px;
+    border: none;
+    border-radius: 4px;
+    background-color: blue;
+    color: white;
+}
+.pinglunquyu{
+    margin: 0 0 0 170px;
+    border:solid 1px black;
+    padding: 10px 0 10px 10px;
+    width: 920px;
+}
+ h4{
+    margin-left: 190px;
+}
+#pl-table img{
+    width: 40px;
+    height: 44px;
+    border: none;
+    border-radius: 20px;
+}

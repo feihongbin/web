@@ -1,0 +1,44 @@
+a{
+    text-decoration: none;
+}
+img.y{
+    width: 1500px;
+    height: 670px;
+    z-index: 0;
+}
+form{
+    background-color: white;
+    width: 360px;
+    height: 250px;
+    position: absolute;
+    left: 600px;
+    top: 120px;
+}
+div{
+    text-align: center;
+}
+td.a{
+    width: 360px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+td.b{
+    width: 240px;
+    padding: 8px;
+}
+input.z{
+    height: 24px;
+    width: 190px;
+    border:solid 2px #e6e6f2;
+}
+button{
+    background-color: rgb(143, 224, 61);
+    width: 196px;
+    height: 32px;
+    border: solid 1px #e6e6f2;
+}
+body{
+    background-color: rgb(6, 88, 84);
+}
+

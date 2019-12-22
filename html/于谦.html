@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/publicCss.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/video.css">
+    <link rel="stylesheet" href="../css/face.css">
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <script>
+        var timer;
+        document.onkeydown = function(evt) {var event = evt || window.event;if (event.keyCode == 13) {addBarrage();}}
+        var colors = ['#2C3E50', '#FF0000', '#1E87F0', '#7AC84B', '#FF7F00', '#9B39F4', '#FF69B4'];//弹幕颜色库
+        function addBarrage() {
+        clearInterval(timer);
+        var text = document.getElementById('text').value;
+        document.getElementById('text').value = "";
+        var index = parseInt(Math.random() * colors.length); //随机弹幕颜色
+        var screenW = window.innerWidth;
+        var screenH = dm.offsetHeight;
+        var screenW = dm.offsetWidth ;
+        var max = Math.floor(screenH / 40);
+        var height = 45 + 40 * (parseInt(Math.random() * (max + 1)) - 1);
+        var span = document.createElement('span');
+        span.style.left = screenW + 'px';
+        span.style.top = height + 'px';
+        span.style.color = colors[index];
+        span.innerHTML = text;
+        var dmDom = document.getElementById('dm');
+        dmDom.appendChild(span);
+        timer = setInterval(move, 15);
+}
+function move() {
+  var arr=[];
+  var oSpan=document.getElementsByTagName('span');
+  for(var i=0;i<oSpan.length;i++){
+    arr.push(oSpan[i].offsetLeft);
+    arr[i] -= 2;
+    oSpan[i].style.left = arr[i]+'px';
+    if(arr[i]<-oSpan[i].offsetWidth){
+      var dmDom=document.getElementById('dm');
+      dmDom.removeChild(dmDom.childNodes[0]);
+    }
+  }
+}
+    </script>
+    <title>于谦</title>
+</head>
+<body bgcolor="F2EFE6">
+    <div class="container">
+        <div class="top">
+            <i class="web-font">杭州历史网</i>
+                <div>
+                  <li><a class="ftsize1"  href="../html/index.html">首页</a></li>
+                  <li><a class="ftsize1" target="_blank" href="../html/秦汉时期.html">历史概况</a></li>
+                  <li><a class="ftsize1"  href="../html/历史名人.html">历史名人</a></li>
+                  <li><a class="ftsize1" target="_blank" href="../html/重大事件.html">重大事件</a></li>
+                  <li><a class="ftsize1" target="blank" href="../html/诗词文化.html">诗词文化</a></li>
+                  <li><a class="ftsize1" target="_blank" href="../html/珍贵文物.html">珍贵文物</a></li>
+            </div>
+                <div>
+                    <table border="1px;" style="margin-left: 1vh;" >
+                        <tr>
+                            <td style="width: 100%;border: 0;"><input  class="search-txt" name="search-txt" type="text" placeholder="搜索" name="sousuo" id="search"></td>
+                            <td style="border: 0;"><i class="iconfont icon-search" style="margin: 0;"></i></td>
+                    </tr>
+                </table>
+                </div>
+        </div>
+        <div class="fanhui" style="font-size: 16px;">
+            <a style="color: black;" href="../html/index.html">首页</a> > 
+            <a style="color: black;" href="../html/历史名人.html">历史名人</a> > 于谦
+        </div>
+        <hr>
+        <div class="content">
+            <div class="titles" style="font-size: 16px;">
+                <h3>御史房名人传 带你了解不一样的于谦</h3>
+            </div>
+            <div class="neirong" style="padding-top: 0;position: relative;">
+                    <div class="box" id="box">
+                            <div id="vedio"> <video src="../video/yuqian.mp4" controls autoplay="autoplay" width="600px" height="350px"></video>
+                                <div id="dm"></div>
+                                <div class="idDom" id="idDom">
+                                        <div id="content">
+                                          <p style="font-size: 14px;">发送弹幕：</p>
+                                          <input type="text" class="text" id="text" placeholder="请输入你想说的话" />
+                                          <button type="button" class="btn" id="btn" onclick="addBarrage();" >发送</button>
+                                        </div>
+                            </div>
+                          </div>
+                        </div>
+            </div>
+        </div>
+        <div id="footer" style="font-size: 16px;"></div>
+    </div>
+    <script>
+            $.get("../html/footer.html", function(result){      
+              $("#footer").html(result);    
+            });
+        </script>
+</body>
+</html>
